@@ -104,7 +104,7 @@ static NSBundle *_@@PROJECTNAME@@WeeAppBundle = nil;
 @implementation @@PROJECTNAME@@Controller
 @synthesize view = _view;
 
-+ (void)initialize {
++ (void)initialize { //note about how the icon for your widget is handled (the one that shows in the widgets' table view when adding a new one): 1st priority is icon.png file in your bundle, if that isn't present an app icon with the AppBundleID (in your bundle Info.plist) string as bundle ID is used and if that isn't present then a generic "?" icon is used.
 	_@@PROJECTNAME@@WeeAppBundle = [[NSBundle bundleForClass:[self class]] retain];
 }
 
